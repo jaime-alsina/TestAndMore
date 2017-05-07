@@ -1,0 +1,5 @@
+E:\Dev\Raet Recruitment 1\Raet Recruitment 1\Raet.Recruitment.Refactoring.Shapes\bin\Debug\Raet.Recruitment.Refactoring.Shapes.dll
+E:\Dev\Raet Recruitment 1\Raet Recruitment 1\Raet.Recruitment.Refactoring.Shapes\bin\Debug\Raet.Recruitment.Refactoring.Shapes.pdb
+E:\Dev\Raet Recruitment 1\Raet Recruitment 1\Raet.Recruitment.Refactoring.Shapes\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+E:\Dev\Raet Recruitment 1\Raet Recruitment 1\Raet.Recruitment.Refactoring.Shapes\obj\Debug\Raet.Recruitment.Refactoring.Shapes.dll
+E:\Dev\Raet Recruitment 1\Raet Recruitment 1\Raet.Recruitment.Refactoring.Shapes\obj\Debug\Raet.Recruitment.Refactoring.Shapes.pdb
