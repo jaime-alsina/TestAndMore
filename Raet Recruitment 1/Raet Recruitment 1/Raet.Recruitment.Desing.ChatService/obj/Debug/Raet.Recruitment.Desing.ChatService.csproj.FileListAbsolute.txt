@@ -1,4 +1,0 @@
-E:\Dev\Raet Recruitment 1\Raet Recruitment 1\Raet.Recruitment.Desing.ChatService\bin\Debug\Raet.Recruitment.Desing.ChatService.dll
-E:\Dev\Raet Recruitment 1\Raet Recruitment 1\Raet.Recruitment.Desing.ChatService\bin\Debug\Raet.Recruitment.Desing.ChatService.pdb
-E:\Dev\Raet Recruitment 1\Raet Recruitment 1\Raet.Recruitment.Desing.ChatService\obj\Debug\Raet.Recruitment.Desing.ChatService.dll
-E:\Dev\Raet Recruitment 1\Raet Recruitment 1\Raet.Recruitment.Desing.ChatService\obj\Debug\Raet.Recruitment.Desing.ChatService.pdb

@@ -1,0 +1,11 @@
+E:\Dev\Raet Recruitment 1\Raet Recruitment 1\Raet.Recruitment.Algorithmic.StringCompression\bin\Debug\Raet.Recruitment.Algorithmic.StringCompression.dll
+E:\Dev\Raet Recruitment 1\Raet Recruitment 1\Raet.Recruitment.Algorithmic.StringCompression\bin\Debug\Raet.Recruitment.Algorithmic.StringCompression.pdb
+E:\Dev\Raet Recruitment 1\Raet Recruitment 1\Raet.Recruitment.Algorithmic.StringCompression\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+E:\Dev\Raet Recruitment 1\Raet Recruitment 1\Raet.Recruitment.Algorithmic.StringCompression\obj\Debug\Raet.Recruitment.Algorithmic.StringCompression.dll
+E:\Dev\Raet Recruitment 1\Raet Recruitment 1\Raet.Recruitment.Algorithmic.StringCompression\obj\Debug\Raet.Recruitment.Algorithmic.StringCompression.pdb
+E:\Dev\GitHub\TestAndMore\TestAndMore\Raet Recruitment 1\Raet.Recruitment.Algorithmic.StringCompression\bin\Debug\Raet.Recruitment.Algorithmic.StringCompression.dll
+E:\Dev\GitHub\TestAndMore\TestAndMore\Raet Recruitment 1\Raet.Recruitment.Algorithmic.StringCompression\bin\Debug\Raet.Recruitment.Algorithmic.StringCompression.pdb
+E:\Dev\GitHub\TestAndMore\TestAndMore\Raet Recruitment 1\Raet.Recruitment.Algorithmic.StringCompression\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+E:\Dev\GitHub\TestAndMore\TestAndMore\Raet Recruitment 1\Raet.Recruitment.Algorithmic.StringCompression\obj\Debug\Raet.Recruitment.Algorithmic.StringCompression.csprojResolveAssemblyReference.cache
+E:\Dev\GitHub\TestAndMore\TestAndMore\Raet Recruitment 1\Raet.Recruitment.Algorithmic.StringCompression\obj\Debug\Raet.Recruitment.Algorithmic.StringCompression.dll
+E:\Dev\GitHub\TestAndMore\TestAndMore\Raet Recruitment 1\Raet.Recruitment.Algorithmic.StringCompression\obj\Debug\Raet.Recruitment.Algorithmic.StringCompression.pdb
