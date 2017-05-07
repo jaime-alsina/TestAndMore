@@ -1,11 +1,11 @@
 ﻿
 
-Task description:
+Task 3 description:
+- is the original task
+	-Write the domain model for a chat service. 
 
-	Write the domain model for a chat service. 
-
-	Designing a chat service is certainly far beyond the scope of what could be completed in a recruitment test. 
-	Please focus only in what is a fair representation of its model.
+	-Designing a chat service is certainly far beyond the scope of what could be completed in a recruitment test. 
+	-Please focus only in what is a fair representation of its model.
 
 	Entities:
 
@@ -48,7 +48,7 @@ Task description:
 			TargetAccepted
 			DateTimeCreated
 
-	Behaviour:
+	-Behaviour:
 
 	 - Get user profile.
 
@@ -61,11 +61,11 @@ Task description:
 	 - Send messages to private and group conversations.
 			
 
-Code requirements:
+-Code requirements:
 
-	1. The code should fulfil OOP and SOLID principles.
-	2. The code should be maintainable.
+	-1. The code should fulfil OOP and SOLID principles.
+	-2. The code should be maintainable.
 
-Hint:
+-Hint:
 	- This task evaluates desing & clean code over algorithmic. 
 	- There is not exact correct answer. Feel free to add more Entities and/or Behaviour
