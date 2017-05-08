@@ -1,0 +1,6 @@
+@using Raet.Recruitment.Desing.ChatService.MvcUI.Areas.HelpPage.ModelDescriptions
+@model CollectionModelDescription
+@if (Model.ElementDescription is ComplexTypeModelDescription)
+{
+    @Html.DisplayFor(m => m.ElementDescription)
+}
