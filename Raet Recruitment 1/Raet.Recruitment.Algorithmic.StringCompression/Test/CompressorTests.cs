@@ -14,6 +14,7 @@ namespace Raet.Recruitment.Algorithmic.StringCompression
         }
 
         [TestMethod]
+        [TestCategory("Compressor")]
         public void givenEmptyInput_whenCompress_thenReturnEmpty()
         {
             var toAssert = _stringCompressor.Compress("");
@@ -21,6 +22,7 @@ namespace Raet.Recruitment.Algorithmic.StringCompression
         }
 
         [TestMethod]
+        [TestCategory("Compressor")]
         public void givenNullInput_whenCompress_thenReturnEmpty()
         {
             var toAssert = _stringCompressor.Compress(null);
@@ -28,6 +30,7 @@ namespace Raet.Recruitment.Algorithmic.StringCompression
         }
 
         [TestMethod]
+        [TestCategory("Compressor")]
         public void givenSpaceInput_whenCompress_thenReturnEmpty()
         {
             var toAssert = _stringCompressor.Compress("   ");
@@ -35,6 +38,7 @@ namespace Raet.Recruitment.Algorithmic.StringCompression
         }
 
         [TestMethod]
+        [TestCategory("Compressor")]
         public void givenInput_whenCompress_thenReturnCommpressed()
         {
             var toAssert = _stringCompressor.Compress("aabcccccaaa");
@@ -42,6 +46,7 @@ namespace Raet.Recruitment.Algorithmic.StringCompression
         }
 
         [TestMethod]
+        [TestCategory("Compressor")]
         public void givenInputWithGreaterThanTenRepetitions_whenCompress_thenReturnCommpressed()
         {
             var toAssert = _stringCompressor.Compress("aabccccccccccccccccaaadee");
@@ -49,10 +54,20 @@ namespace Raet.Recruitment.Algorithmic.StringCompression
         }
 
         [TestMethod]
+        [TestCategory("Compressor")]
         public void givenUncompressibleInput_whenCompress_thenReturnSameValue()
         {
             var toAssert = _stringCompressor.Compress("abcdeefv");
             Assert.AreEqual(toAssert, "abcdeefv");
+        }
+
+        [TestMethod]
+        [TestCategory("Compressor")]
+        public void given1000Input_whenCompress_thenReturnCompressed()
+        {
+            string process = new string('A', 30) + new string('x', 30) + new string('f', 30) + new string('x', 30) + new string('d', 30) + "g" + new string('A', 850);
+            var toAssert = _stringCompressor.Compress(process);
+            Assert.AreEqual(toAssert, "A3A0x3x0f3f0x3x0d3d0g1A8A5A0");
         }
     }
 }

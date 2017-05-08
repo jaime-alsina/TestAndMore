@@ -7,3 +7,7 @@ E:\Dev\GitHub\TestAndMore\TestAndMore\Raet Recruitment 1\Raet.Recruitment.Desing
 E:\Dev\GitHub\TestAndMore\TestAndMore\Raet Recruitment 1\Raet.Recruitment.Desing.ChatService\obj\Debug\Raet.Recruitment.Desing.ChatService.csprojResolveAssemblyReference.cache
 E:\Dev\GitHub\TestAndMore\TestAndMore\Raet Recruitment 1\Raet.Recruitment.Desing.ChatService\obj\Debug\Raet.Recruitment.Desing.ChatService.dll
 E:\Dev\GitHub\TestAndMore\TestAndMore\Raet Recruitment 1\Raet.Recruitment.Desing.ChatService\obj\Debug\Raet.Recruitment.Desing.ChatService.pdb
+C:\Dev\GitHub\TestAndMore\TestAndMore\Raet Recruitment 1\Raet.Recruitment.Desing.ChatService\bin\Debug\Raet.Recruitment.Desing.ChatService.dll
+C:\Dev\GitHub\TestAndMore\TestAndMore\Raet Recruitment 1\Raet.Recruitment.Desing.ChatService\bin\Debug\Raet.Recruitment.Desing.ChatService.pdb
+C:\Dev\GitHub\TestAndMore\TestAndMore\Raet Recruitment 1\Raet.Recruitment.Desing.ChatService\obj\Debug\Raet.Recruitment.Desing.ChatService.dll
+C:\Dev\GitHub\TestAndMore\TestAndMore\Raet Recruitment 1\Raet.Recruitment.Desing.ChatService\obj\Debug\Raet.Recruitment.Desing.ChatService.pdb

@@ -25,7 +25,6 @@ namespace Raet.Recruitment.Refactoring.Shapes
                               + g.Sum(s => s.GetArea()).ToString("#.##") + ", Perimeter: " 
                               + g.Sum(s => s.GetPerimeter()).ToString("#.##")).ToList();
             }
-
             return processData;
         }
 

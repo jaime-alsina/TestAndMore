@@ -42,7 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Base\BaseShape.cs" />
-    <Compile Include="Test\IShapeTest.cs" />
+    <Compile Include="Test\ShapeTest.cs" />
     <Compile Include="Shapes\Square.cs" />
     <Compile Include="Shapes\Circle.cs" />
     <Compile Include="Base\IShape.cs" />
