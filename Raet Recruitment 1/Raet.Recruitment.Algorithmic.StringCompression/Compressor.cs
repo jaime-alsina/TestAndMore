@@ -25,7 +25,7 @@ namespace Raet.Recruitment.Algorithmic.StringCompression
                
                 foreach (var item in input)
                 {
-                    this.AddChar(item.ToString(), ref lst);
+                    this.AddCharacter(item.ToString(), ref lst);
                 }
 
                 var sb = new StringBuilder();
@@ -46,7 +46,7 @@ namespace Raet.Recruitment.Algorithmic.StringCompression
         }
 
         // see if previuos is the same as the one added
-        private void AddChar(string c, ref List<Letter> lst)
+        private void AddCharacter(string c, ref List<Letter> lst)
         {
             var lastEntry = lst.LastOrDefault();
             if (lastEntry != null && lastEntry.Character == c)
