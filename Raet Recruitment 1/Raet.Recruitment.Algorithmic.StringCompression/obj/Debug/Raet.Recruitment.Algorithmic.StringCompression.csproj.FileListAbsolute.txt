@@ -14,3 +14,4 @@ C:\Dev\GitHub\TestAndMore\TestAndMore\Raet Recruitment 1\Raet.Recruitment.Algori
 C:\Dev\GitHub\TestAndMore\TestAndMore\Raet Recruitment 1\Raet.Recruitment.Algorithmic.StringCompression\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
 C:\Dev\GitHub\TestAndMore\TestAndMore\Raet Recruitment 1\Raet.Recruitment.Algorithmic.StringCompression\obj\Debug\Raet.Recruitment.Algorithmic.StringCompression.dll
 C:\Dev\GitHub\TestAndMore\TestAndMore\Raet Recruitment 1\Raet.Recruitment.Algorithmic.StringCompression\obj\Debug\Raet.Recruitment.Algorithmic.StringCompression.pdb
+C:\Dev\GitHub\TestAndMore\TestAndMore\Raet Recruitment 1\Raet.Recruitment.Algorithmic.StringCompression\obj\Debug\Raet.Recruitment.Algorithmic.StringCompression.csprojResolveAssemblyReference.cache

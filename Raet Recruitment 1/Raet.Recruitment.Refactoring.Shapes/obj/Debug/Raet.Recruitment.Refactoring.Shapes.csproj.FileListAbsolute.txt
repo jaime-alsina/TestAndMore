@@ -14,3 +14,4 @@ C:\Dev\GitHub\TestAndMore\TestAndMore\Raet Recruitment 1\Raet.Recruitment.Refact
 C:\Dev\GitHub\TestAndMore\TestAndMore\Raet Recruitment 1\Raet.Recruitment.Refactoring.Shapes\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
 C:\Dev\GitHub\TestAndMore\TestAndMore\Raet Recruitment 1\Raet.Recruitment.Refactoring.Shapes\obj\Debug\Raet.Recruitment.Refactoring.Shapes.dll
 C:\Dev\GitHub\TestAndMore\TestAndMore\Raet Recruitment 1\Raet.Recruitment.Refactoring.Shapes\obj\Debug\Raet.Recruitment.Refactoring.Shapes.pdb
+C:\Dev\GitHub\TestAndMore\TestAndMore\Raet Recruitment 1\Raet.Recruitment.Refactoring.Shapes\obj\Debug\Raet.Recruitment.Refactoring.Shapes.csprojResolveAssemblyReference.cache

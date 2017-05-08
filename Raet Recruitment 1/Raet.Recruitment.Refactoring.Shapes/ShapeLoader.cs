@@ -19,6 +19,7 @@ namespace Raet.Recruitment.Refactoring.Shapes
             }
             else
             {
+                // Group the results by shape
                 processData = (from s in shapes
                               group s by new { Type = s.GetType().Name } into g
                               select g.Key.Type + "(s): " + g.Count() + ", Area: " 

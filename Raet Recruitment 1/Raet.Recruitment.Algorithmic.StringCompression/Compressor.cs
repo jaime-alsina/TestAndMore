@@ -22,7 +22,7 @@ namespace Raet.Recruitment.Algorithmic.StringCompression
 
             if (stringIsValid)
             {
-               
+               // process the input by creating a letter object
                 foreach (var item in input)
                 {
                     this.AddCharacter(item.ToString(), ref lst);
@@ -30,6 +30,7 @@ namespace Raet.Recruitment.Algorithmic.StringCompression
 
                 var sb = new StringBuilder();
 
+                // Apply the display logic
                 foreach (var item in lst)
                 {
                     sb.Append(item.ToString());
