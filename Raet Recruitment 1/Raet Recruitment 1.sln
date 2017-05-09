@@ -5,7 +5,7 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Raet.Recruitment.Algorithmic.StringCompression", "Raet.Recruitment.Algorithmic.StringCompression\Raet.Recruitment.Algorithmic.StringCompression.csproj", "{3B3081D6-3723-4FE1-B71E-9550043F02CD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Raet.Recruitment.Desing.ChatService", "Raet.Recruitment.Desing.ChatService\Raet.Recruitment.Desing.ChatService.csproj", "{31573020-4312-4C87-98F3-8BC360B429BD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Raet.Recruitment.Desing.ChatService.Original", "Raet.Recruitment.Desing.ChatService\Raet.Recruitment.Desing.ChatService.Original.csproj", "{31573020-4312-4C87-98F3-8BC360B429BD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Raet.Recruitment.Refactoring.Shapes", "Raet.Recruitment.Refactoring.Shapes\Raet.Recruitment.Refactoring.Shapes.csproj", "{3B97E260-350D-4B92-9ECB-A5EA659F892E}"
 EndProject
@@ -22,8 +22,6 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Raet.Recruitment.Desing.ChatService.Wcf", "Raet.Recruitment.Desing.ChatService.Wcf\Raet.Recruitment.Desing.ChatService.Wcf.csproj", "{3CB45700-B92D-477D-9229-BE511B2D044A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Raet.Recruitment.Desing.ChatService.Model", "Raet.Recruitment.Desing.ChatService.Model\Raet.Recruitment.Desing.ChatService.Model.csproj", "{1FF69821-18BA-4E06-BEE8-38A140DB68C7}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Raet.Recruitment.Desing.ChatService.Interfaces", "Raet.Recruitment.Desing.ChatService.Interfaces\Raet.Recruitment.Desing.ChatService.Interfaces.csproj", "{6AA242A6-A85E-46F8-9B9C-157CC7FF5195}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Raet.Recruitment.Desing.ChatService.Repository.Test", "Raet.Recruitment.Desing.ChatService.Repository.Test\Raet.Recruitment.Desing.ChatService.Repository.Test.csproj", "{A9CDDC4A-068F-4679-9355-6CFFF84CF4EE}"
 EndProject
@@ -65,10 +63,6 @@ Global
 		{1FF69821-18BA-4E06-BEE8-38A140DB68C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1FF69821-18BA-4E06-BEE8-38A140DB68C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1FF69821-18BA-4E06-BEE8-38A140DB68C7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6AA242A6-A85E-46F8-9B9C-157CC7FF5195}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6AA242A6-A85E-46F8-9B9C-157CC7FF5195}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6AA242A6-A85E-46F8-9B9C-157CC7FF5195}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6AA242A6-A85E-46F8-9B9C-157CC7FF5195}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A9CDDC4A-068F-4679-9355-6CFFF84CF4EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A9CDDC4A-068F-4679-9355-6CFFF84CF4EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A9CDDC4A-068F-4679-9355-6CFFF84CF4EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -93,7 +87,6 @@ Global
 		{13D2BC81-376B-450C-82A7-0A0BE415F1C4} = {EDBDBD31-1BEB-41FD-8A95-179E1F3D393E}
 		{3CB45700-B92D-477D-9229-BE511B2D044A} = {EDBDBD31-1BEB-41FD-8A95-179E1F3D393E}
 		{1FF69821-18BA-4E06-BEE8-38A140DB68C7} = {EDBDBD31-1BEB-41FD-8A95-179E1F3D393E}
-		{6AA242A6-A85E-46F8-9B9C-157CC7FF5195} = {EDBDBD31-1BEB-41FD-8A95-179E1F3D393E}
 		{A9CDDC4A-068F-4679-9355-6CFFF84CF4EE} = {EDBDBD31-1BEB-41FD-8A95-179E1F3D393E}
 		{D5AB3541-F915-4747-9C13-50F38F810AE3} = {EDBDBD31-1BEB-41FD-8A95-179E1F3D393E}
 		{2E1F9429-FB45-4478-8FBE-196A3391CC98} = {EDBDBD31-1BEB-41FD-8A95-179E1F3D393E}

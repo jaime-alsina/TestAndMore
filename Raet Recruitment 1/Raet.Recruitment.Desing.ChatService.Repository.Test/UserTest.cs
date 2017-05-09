@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Raet.Recruitment.Desing.ChatService.Repository
+namespace Raet.Recruitment.Desing.ChatService.Repository.Test
 {
-    public class Class1
+    public class UserTest
     {
     }
 }

@@ -1,0 +1,208 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl" Namespace="ChatModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2005">
+        <EntityContainer Name="ChatModelTargetContainer" >
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema xmlns="http://schemas.microsoft.com/ado/2009/11/edm" xmlns:cg="http://schemas.microsoft.com/ado/2006/04/codegeneration" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" Namespace="ChatModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" annotation:UseStrongSpatialTypes="false">
+        <EntityContainer Name="ChatModelContainer" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Users" EntityType="ChatModel.User" />
+          <EntitySet Name="Status" EntityType="ChatModel.Status" />
+          <AssociationSet Name="UserStatus" Association="ChatModel.UserStatus">
+            <End Role="User" EntitySet="Users" />
+            <End Role="Status" EntitySet="Status" />
+          </AssociationSet>
+          <EntitySet Name="Groups" EntityType="ChatModel.Group" />
+          <AssociationSet Name="UserGroup" Association="ChatModel.UserGroup">
+            <End Role="User" EntitySet="Users" />
+            <End Role="Group" EntitySet="Groups" />
+          </AssociationSet>
+          <EntitySet Name="GroupUserMaps" EntityType="ChatModel.GroupUserMap" />
+          <AssociationSet Name="GroupUserMapUser" Association="ChatModel.GroupUserMapUser">
+            <End Role="GroupUserMap" EntitySet="GroupUserMaps" />
+            <End Role="User" EntitySet="Users" />
+          </AssociationSet>
+          <AssociationSet Name="GroupGroupUserMap" Association="ChatModel.GroupGroupUserMap">
+            <End Role="Group" EntitySet="Groups" />
+            <End Role="GroupUserMap" EntitySet="GroupUserMaps" />
+          </AssociationSet>
+          <EntitySet Name="Conversations" EntityType="ChatModel.Conversation" />
+          <AssociationSet Name="UserConversationAssocia" Association="ChatModel.UserConversationAssocia">
+            <End Role="User" EntitySet="Users" />
+            <End Role="Conversation" EntitySet="Conversations" />
+          </AssociationSet>
+          <EntitySet Name="ConversationUser" EntityType="ChatModel.UserConversation" />
+          <AssociationSet Name="ConversationUserConversation" Association="ChatModel.ConversationUserConversation">
+            <End Role="Conversation" EntitySet="Conversations" />
+            <End Role="UserConversation" EntitySet="ConversationUser" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="User">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" annotation:StoreGeneratedPattern="None" />
+          <Property Name="UserName" Type="String" Nullable="false" />
+          <Property Name="Email" Type="String" Nullable="false" />
+          <NavigationProperty Name="Status" Relationship="ChatModel.UserStatus" FromRole="User" ToRole="Status" />
+          <NavigationProperty Name="Groups" Relationship="ChatModel.UserGroup" FromRole="User" ToRole="Group" />
+          <Property Name="GroupId" Type="Guid" Nullable="false" />
+          <NavigationProperty Name="GroupUserMap" Relationship="ChatModel.GroupUserMapUser" FromRole="User" ToRole="GroupUserMap" />
+          <NavigationProperty Name="Conversations" Relationship="ChatModel.UserConversationAssocia" FromRole="User" ToRole="Conversation" />
+        </EntityType>
+        <EntityType Name="Status">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" annotation:StoreGeneratedPattern="None" />
+          <Property Name="UserId" Type="Guid" Nullable="false" />
+          <NavigationProperty Name="User" Relationship="ChatModel.UserStatus" FromRole="Status" ToRole="User" />
+          <Property Name="UserId1" Type="Guid" Nullable="false" />
+          <Property Name="UserStatus" Type="Int32" Nullable="false" />
+          <Property Name="MessageStatus" Type="String" Nullable="false" />
+        </EntityType>
+        <Association Name="UserStatus">
+          <End Type="ChatModel.User" Role="User" Multiplicity="1" />
+          <End Type="ChatModel.Status" Role="Status" Multiplicity="1" />
+          <ReferentialConstraint>
+            <Principal Role="User">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Status">
+              <PropertyRef Name="UserId1" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="Group">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" annotation:StoreGeneratedPattern="None" />
+          <Property Name="Name" Type="String" Nullable="false" />
+          <Property Name="OwnerUserId" Type="Guid" Nullable="false" />
+          <Property Name="DateCreated" Type="DateTime" Nullable="false" />
+          <NavigationProperty Name="User" Relationship="ChatModel.UserGroup" FromRole="Group" ToRole="User" />
+          <Property Name="UserId" Type="Guid" Nullable="false" />
+          <NavigationProperty Name="GroupUserMaps" Relationship="ChatModel.GroupGroupUserMap" FromRole="Group" ToRole="GroupUserMap" />
+        </EntityType>
+        <Association Name="UserGroup">
+          <End Type="ChatModel.User" Role="User" Multiplicity="1" />
+          <End Type="ChatModel.Group" Role="Group" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Group">
+              <PropertyRef Name="UserId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="GroupUserMap">
+          <Property Name="GroupId" Type="Guid" Nullable="false" />
+          <Property Name="UserId" Type="Guid" Nullable="false" />
+          <NavigationProperty Name="Users" Relationship="ChatModel.GroupUserMapUser" FromRole="GroupUserMap" ToRole="User" />
+          <NavigationProperty Name="Group" Relationship="ChatModel.GroupGroupUserMap" FromRole="GroupUserMap" ToRole="Group" />
+          <Property Name="GroupId1" Type="Guid" Nullable="false" />
+        </EntityType>
+        <Association Name="GroupUserMapUser">
+          <End Type="ChatModel.GroupUserMap" Role="GroupUserMap" Multiplicity="1" />
+          <End Type="ChatModel.User" Role="User" Multiplicity="*" />
+        </Association>
+        <Association Name="GroupGroupUserMap">
+          <End Type="ChatModel.Group" Role="Group" Multiplicity="1" />
+          <End Type="ChatModel.GroupUserMap" Role="GroupUserMap" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Group">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="GroupUserMap">
+              <PropertyRef Name="GroupId1" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="Conversation">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" annotation:StoreGeneratedPattern="None" />
+          <Property Name="ConversationType" Type="Int32" Nullable="false" />
+          <Property Name="MessageStatus" Type="Int32" Nullable="false" />
+          <Property Name="DateCreated" Type="DateTime" Nullable="false" />
+          <Property Name="DateSent" Type="DateTime" Nullable="false" />
+          <Property Name="UserId" Type="Guid" Nullable="false" />
+          <NavigationProperty Name="User" Relationship="ChatModel.UserConversationAssocia" FromRole="Conversation" ToRole="User" />
+          <NavigationProperty Name="UserConversations" Relationship="ChatModel.ConversationUserConversation" FromRole="Conversation" ToRole="UserConversation" />
+        </EntityType>
+        <Association Name="UserConversationAssocia">
+          <End Type="ChatModel.User" Role="User" Multiplicity="1" />
+          <End Type="ChatModel.Conversation" Role="Conversation" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="User">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Conversation">
+              <PropertyRef Name="UserId1" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityType Name="UserConversation">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Guid" Nullable="false" annotation:StoreGeneratedPattern="None" />
+          <Property Name="ConversationId" Type="Guid" Nullable="false" />
+          <Property Name="Message" Type="String" Nullable="false" />
+          <Property Name="MessageReceived" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="Conversation" Relationship="ChatModel.ConversationUserConversation" FromRole="UserConversation" ToRole="Conversation" />
+          <Property Name="ConversationId1" Type="Guid" Nullable="false" />
+        </EntityType>
+        <Association Name="ConversationUserConversation">
+          <End Type="ChatModel.Conversation" Role="Conversation" Multiplicity="1" />
+          <End Type="ChatModel.UserConversation" Role="UserConversation" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Conversation">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="UserConversation">
+              <PropertyRef Name="ConversationId1" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs" Space="C-S">
+        <Alias Key="Model" Value="ChatModel" />
+        <Alias Key="Target" Value="ChatModel.Store" />
+        <EntityContainerMapping CdmEntityContainer="ChatModelContainer" StorageEntityContainer="ChatModelTargetContainer">
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <edmx:Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </edmx:Connection>
+    <edmx:Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </edmx:Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

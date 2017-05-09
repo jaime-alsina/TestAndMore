@@ -16,7 +16,7 @@ namespace Raet.Recruitment.Desing.ChatService.Model
 
         public ConversationType ConversationType { get; set; }
 
-        public string Message { get; set; }
+        public Guid UserId { get; set; }
 
         public MessageStatus MessageStatus { get; set; }
 
