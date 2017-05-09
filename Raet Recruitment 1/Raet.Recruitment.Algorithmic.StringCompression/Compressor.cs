@@ -23,6 +23,7 @@ namespace Raet.Recruitment.Algorithmic.StringCompression
             if (stringIsValid)
             {
                // process the input by creating a letter object
+               // not save to use the TPL library as we need an order result
                 foreach (var item in input)
                 {
                     this.AddCharacter(item.ToString(), ref lst);
