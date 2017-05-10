@@ -45,6 +45,10 @@ namespace Raet.Recruitment.Algorithmic.StringCompression
             Assert.AreEqual(toAssert, "a2b1c5a3");
         }
 
+        /// <summary>
+        /// The original test had 0c6c I think this was a bug as if it was to be 0 base for numbers greater than 9 
+        /// then the result of the test should have been 0c5c, it maks more sence this one.
+        /// </summary>
         [TestMethod]
         [TestCategory("Compressor")]
         public void givenInputWithGreaterThanTenRepetitions_whenCompress_thenReturnCommpressed()
