@@ -17,7 +17,8 @@ namespace PracticeAlgo.FilePath
             // arrenge
             Path path = new Path("/a/b/c/d");
             //act
-            var actual = path.Cd("../x");
+            path.Cd("../x");
+            var actual = path.CurrentPath;
             //Assert
             Assert.AreEqual("/a/b/c/x", actual);
         }
